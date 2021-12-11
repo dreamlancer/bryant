@@ -1,0 +1,155 @@
+@import '../../../css/variables.scss';
+
+
+.HeadlightsFirstSectionCss {
+  background: $primaryBlack;
+  height: 100vh;
+  min-height: 800px;
+  position: relative;
+  z-index: 50;
+
+  .HeadlightsFirstSectionWrapperCss {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 15px;
+
+    @media (max-width: $screens-lg) {
+      margin: 0 -15px;
+    }
+
+    .container {
+      overflow: visible;
+    }
+  }
+
+  .ContainerCss {
+    height: 100vh; /* wrapper height - container padding */
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    margin: 0 auto;
+
+    @media (max-width: $screens-md) {
+      align-items: flex-start;
+      padding: 0 10px;
+    }
+  }
+
+  .TitleCss {
+    margin-top: -70px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (max-width: $screens-xl) {
+      margin-top: -200px;
+    }
+
+    @media (max-width: $screens-md) {
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+
+  .IgnisLogoWrapperCss {
+    width: 235px;
+
+    svg {
+      width: 100%;
+    }
+    @media (max-width: $screens-md) {
+      width: 235px;
+    }
+  }
+
+  .TitleDetailsCss {
+    color: $secondaryGray3;
+    margin: 57px 0 76px;
+
+    & .highlight {
+      color: $secondaryViolet !important;
+    }
+
+    @media (max-width: $screens-md) {
+      text-align: center;
+      margin: 30px 0 20px;
+    }
+
+    @media (max-width: 400px) {
+      margin: 10px 0 10px;
+      font-size: 20px;
+    }
+  }
+
+  .ButtonsWrapperCss {
+    display: flex;
+
+    .right-gap {
+      margin-right: 30px;
+      @media (max-width: $screens-xs) {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (max-width: $screens-md) {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @media (max-width: $screens-xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .ImageWrapperCss {
+    width: 83.5%;
+    max-width: 1600px;
+    position: absolute;
+    top: 16.2%;
+    left: 17%;
+
+    @media (max-width: $screens-xl) {
+      left: 7%;
+      width: 100%;
+    }
+
+    @media (max-width: $screens-md) {
+      top: 350px;
+      width: 200%;
+      left: -80%;
+    }
+
+    @media (max-width: 400px) {
+      top: 270px;
+    }
+  }
+
+  .InfoBubbleWrapperCss {
+    position: absolute;
+    z-index: 1;
+
+    &.filterTooltip {
+      top: 7%;
+      left: 52%;
+    }
+
+    &.ignisTooltip {
+      top: 11%;
+      left: 56.5%;
+    }
+
+    &.headstrapTooltip {
+      top: 22%;
+      left: 82%;
+    }
+
+    &.batteryTooltip {
+      top: 61%;
+      left: 86%;
+    }
+  }
+}

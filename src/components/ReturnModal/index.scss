@@ -1,0 +1,49 @@
+@import '../../css/variables.scss';
+
+.ReactModal__Content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.review-modal {
+  position: relative;
+  color: black;
+  padding: 2em;
+  font-family: $subtitle-font;
+
+  .close-modal-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.4em;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 26px 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .measure {
+      margin-bottom: 2em;
+      .light-silver {
+        opacity: 0.7;
+      }
+
+      select {
+        font-family: $subtitle-font;
+        option {
+          font-family: $subtitle-font;
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      min-height: 6em;
+      padding: 1em;
+    }
+  }
+}

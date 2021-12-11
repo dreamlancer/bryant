@@ -1,0 +1,74 @@
+// Variables
+
+// UPDATED COLORS
+$primaryBlue: '#3A97C9';
+$primaryBlack: '#111111';
+$primaryWhite: '#EAEAEA';
+
+$secondaryBlue: '#4ABAF7';
+$secondaryViolet: '#A36DE9';
+$secondaryBlack1: '#1B1B1B';
+$secondaryBlack2: '#232323';
+$secondaryGray1: '#515151';
+$secondaryGray2: '#6B6B6B';
+$secondaryGray3: '#A1A1A1';
+$secondaryWhite: '#EBEBEB';
+
+// UPDATE SCREEN SIZES
+// TODO remove old styles or update with these new names
+$screens-xs: '478px';
+$screens-sm: '575px';
+$screens-md: '767px';
+$screens-lg: '991px';
+$screens-xl: '1200px';
+
+// OLD COLORS
+$background-primary: #111;
+$background-secondary: #1b1b1b;
+// $blue: #55b1e3;
+$blue: #3A97C9;
+$purple: #A36DE9;
+// $blue: rgb(72, 192, 219);
+$blue-bg: #0D80B1;
+$link-color: #eaeaea;
+$link-hover-color: #e1e1e1;
+
+$text-primary: #eaeaea;
+$text-secondary: #97C2D8;
+$text-highlight: $blue;
+$text-grey:  rgba(255,255,255,0.72);
+$text-dark: #111;
+
+$btn-primary: #eaeaea;
+$btn-secondary: $blue;
+
+
+
+
+
+
+// Screen
+$screen-xs: 479px;
+$screen-sm: 767px;
+$screen-md: 991px;
+$screen-lg: 1279px;
+
+// *** OLD BUT GOLD *** //
+// Fonts
+// Avenir, SourceSansPro, Nunito
+// Futura, Karla, Montserrat
+// $title-font: 'Futura';
+// $subtitle-font: 'Avenir';
+// $text-font: Arial, Helvetica, sans-serif;
+// $btn-font: Arial, Helvetica, sans-serif;
+
+
+// *** NEW *** //
+$title-font: Yantramanav, sans-serif;
+$subtitle-font: Yantramanav, sans-serif;
+$text-font: Yantramanav, sans-serif;
+$btn-font: Yantramanav, sans-serif;
+
+
+// Other
+$tailoringTransition: all 0.5s linear, transform 0.2s linear;

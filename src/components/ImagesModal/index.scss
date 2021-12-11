@@ -1,0 +1,102 @@
+@import '../../css/variables.scss';
+.images-modal-underlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 20, 20, 1);
+  z-index: 99999999999;
+
+  .images-modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+
+    .images-modal-content {
+      height: 100%;
+
+      .close-modal-button {
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ljk3MSA0Ny45NzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ3Ljk3MSA0Ny45NzE7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjU2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yOC4yMjgsMjMuOTg2TDQ3LjA5Miw1LjEyMmMxLjE3Mi0xLjE3MSwxLjE3Mi0zLjA3MSwwLTQuMjQyYy0xLjE3Mi0xLjE3Mi0zLjA3LTEuMTcyLTQuMjQyLDBMMjMuOTg2LDE5Ljc0NEw1LjEyMSwwLjg4ICAgYy0xLjE3Mi0xLjE3Mi0zLjA3LTEuMTcyLTQuMjQyLDBjLTEuMTcyLDEuMTcxLTEuMTcyLDMuMDcxLDAsNC4yNDJsMTguODY1LDE4Ljg2NEwwLjg3OSw0Mi44NWMtMS4xNzIsMS4xNzEtMS4xNzIsMy4wNzEsMCw0LjI0MiAgIEMxLjQ2NSw0Ny42NzcsMi4yMzMsNDcuOTcsMyw0Ny45N3MxLjUzNS0wLjI5MywyLjEyMS0wLjg3OWwxOC44NjUtMTguODY0TDQyLjg1LDQ3LjA5MWMwLjU4NiwwLjU4NiwxLjM1NCwwLjg3OSwyLjEyMSwwLjg3OSAgIHMxLjUzNS0wLjI5MywyLjEyMS0wLjg3OWMxLjE3Mi0xLjE3MSwxLjE3Mi0zLjA3MSwwLTQuMjQyTDI4LjIyOCwyMy45ODZ6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+        width: 47px;
+        height: 47px;
+        z-index: 10;
+        cursor: pointer;
+        background-size: 26px 26px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .images-modal-swiper-container {
+        width: 100%;
+        height: 100%;
+    
+        .swiper-wrapper {
+          .swiper-slide {
+            text-align: center;
+            text-align: center;
+            font-size: 18px;
+            // background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+          background-size: 49px 54px;
+          @media (max-width: $screen-sm) {
+            background-size: 25px 25px;
+          }
+        }
+
+        .swiper-button-prev {
+          background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMzAgMzMwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMzAgMzMwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4Ij4KPHBhdGggaWQ9IlhNTElEXzIyM18iIGQ9Ik0xMTEuMjEzLDE2NS4wMDRMMjUwLjYwNywyNS42MDdjNS44NTgtNS44NTgsNS44NTgtMTUuMzU1LDAtMjEuMjEzICBjLTUuODU4LTUuODU4LTE1LjM1NS01Ljg1OC0yMS4yMTMsMC4wMDFsLTE1MCwxNTAuMDA0Qzc2LjU4LDE1Ny4yMTEsNzUsMTYxLjAyNiw3NSwxNjUuMDA0YzAsMy45NzksMS41ODEsNy43OTQsNC4zOTQsMTAuNjA3ICBsMTUwLDE0OS45OTZDMjMyLjMyMiwzMjguNTM2LDIzNi4xNjEsMzMwLDI0MCwzMzBzNy42NzgtMS40NjQsMTAuNjA3LTQuMzk0YzUuODU4LTUuODU4LDUuODU4LTE1LjM1NSwwLTIxLjIxM0wxMTEuMjEzLDE2NS4wMDR6IiBmaWxsPSIjRkZGRkZGIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+        }
+
+        .swiper-button-next {
+          background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMzAgMzMwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMzAgMzMwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4Ij4KPHBhdGggaWQ9IlhNTElEXzIyMl8iIGQ9Ik0yNTAuNjA2LDE1NC4zODlsLTE1MC0xNDkuOTk2Yy01Ljg1Ny01Ljg1OC0xNS4zNTUtNS44NTgtMjEuMjEzLDAuMDAxICBjLTUuODU3LDUuODU4LTUuODU3LDE1LjM1NSwwLjAwMSwyMS4yMTNsMTM5LjM5MywxMzkuMzlMNzkuMzkzLDMwNC4zOTRjLTUuODU3LDUuODU4LTUuODU3LDE1LjM1NSwwLjAwMSwyMS4yMTMgIEM4Mi4zMjIsMzI4LjUzNiw4Ni4xNjEsMzMwLDkwLDMzMHM3LjY3OC0xLjQ2NCwxMC42MDctNC4zOTRsMTQ5Ljk5OS0xNTAuMDA0YzIuODE0LTIuODEzLDQuMzk0LTYuNjI4LDQuMzk0LTEwLjYwNiAgQzI1NSwxNjEuMDE4LDI1My40MiwxNTcuMjAyLDI1MC42MDYsMTU0LjM4OXoiIGZpbGw9IiNGRkZGRkYiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+        }
+
+        .swiper-pagination {
+          bottom: -18px;
+          left: 0;
+          width: 100%;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.ReactModal__Content {
+  max-width: 100vw !important;
+
+  @media (max-width: $screen-sm) {
+    .swiper-button-next{
+      right: -2.2rem;
+    }
+    .swiper-button-prev {
+      left: -2.2rem;
+    }
+  }
+}

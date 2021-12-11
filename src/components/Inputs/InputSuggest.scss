@@ -1,0 +1,49 @@
+// {
+//   container:                'react-autosuggest__container',
+//   containerOpen:            'react-autosuggest__container--open',
+//   input:                    'react-autosuggest__input',
+//   inputOpen:                'react-autosuggest__input--open',
+//   inputFocused:             'react-autosuggest__input--focused',
+//   suggestionsContainer:     'react-autosuggest__suggestions-container',
+//   suggestionsContainerOpen: 'react-autosuggest__suggestions-container--open',
+//   suggestionsList:          'react-autosuggest__suggestions-list',
+//   suggestion:               'react-autosuggest__suggestion',
+//   suggestionFirst:          'react-autosuggest__suggestion--first',
+//   suggestionHighlighted:    'react-autosuggest__suggestion--highlighted',
+//   sectionContainer:         'react-autosuggest__section-container',
+//   sectionContainerFirst:    'react-autosuggest__section-container--first',
+//   sectionTitle:             'react-autosuggest__section-title'
+// }
+
+.react-autosuggest__container {
+  color: black;
+  position: relative;
+  z-index: 100;
+}
+.react-autosuggest__suggestions-list {
+  list-style: none;
+  position: absolute;
+  max-height: 200px;
+  width: 100%;
+  overflow: auto;
+  background: white;
+  border: 1px solid grey;
+  border-top: none;
+}
+.react-autosuggest__suggestion {
+  padding: 8px 14px;
+  margin: 0;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background: rgba(72, 192, 219, 0.3);
+}
+
+input:not(.react-autosuggest__input--focused) {
+  .react-autosuggest__suggestions-list {
+    display: none;
+  }
+}
+.react-autosuggest__input {
+  border: 1px solid grey;
+}

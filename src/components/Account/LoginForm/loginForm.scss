@@ -1,0 +1,39 @@
+.login-form {
+  width: 200%;
+  display: flex;
+  transform: translateX(-50%);
+  transition: transform 0.25s ease-in-out;
+  
+  &.login {
+    transform: translateX(0);
+    max-height: 200px;
+  }
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+    margin-left: 1px;
+  }
+  
+  .white-btn {
+    background-color: white;
+  }
+}
+
+.login-wrapper {
+  overflow: hidden;
+  padding-top: 1rem;
+}
+
+.forgotten-btn {
+  padding-left: 0;
+  color: white;
+}
+
+.signup-wrapper {
+  .field-wrapper {
+    padding-bottom: 10px;
+  }
+}

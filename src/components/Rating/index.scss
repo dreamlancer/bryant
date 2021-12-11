@@ -1,0 +1,47 @@
+@import '../../css/variables.scss';
+
+.rating {
+  .control-wrapper {
+    position: absolute;
+    top: 1em;
+    bottom: auto;
+    right: 3em;
+    left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 10;
+    .swiper-button-prev-rating {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      padding: 15px 10px;
+      right: 0;
+    }
+    .swiper-button-next-rating {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      padding: 15px 10px;
+    }
+    @media (max-width: $screen-sm) {
+      top: auto;
+    }
+  }
+
+  .swipe-arrow-left {
+    border-left: 2px solid white;
+    height: 15px;
+    width: 15px;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+  }
+
+  .swipe-arrow-right {
+    border-right: 2px solid white;
+    height: 15px;
+    width: 15px;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+  }
+}

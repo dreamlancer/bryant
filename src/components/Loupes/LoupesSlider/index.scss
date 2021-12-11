@@ -1,0 +1,89 @@
+@import '../../../css/variables.scss';
+
+.loupes-bg{
+  background: linear-gradient(to bottom, #000,  #111111 60%, #111111);
+}
+#stage-parent {
+  width: 100%;
+  cursor: url('./img/cursor-arr.png'), default;
+  &.cursor-rotation{
+    cursor: url('./img/cursor-rotation.png'), default;
+  }
+}
+
+.loupes_wrap{
+  background: url('./img/bg-slider2.png') no-repeat;
+  background-position-y: -65%;
+  background-size: 100%;
+  overflow: hidden;
+  position: relative;
+  
+  @media (max-width: $screen-sm) {
+    background-position-y: 356%;
+   }
+   #spin{
+    position: absolute;
+    
+    width: 35%;
+    height: 400px;
+    top: 3%;
+    left: 50%;
+    transform:  translateX(-50%) ;
+    -webkit-transform:  translateX(-50%) ;
+    -moz-transform:  translateX(-50%) ;
+    -ms-transform:  translateX(-50%) ;
+    -o-transform:  translateX(-50%) ;
+    opacity: 0;
+    z-index: -1;
+
+    @media (max-width: 1500px) {
+      top: -4%;
+     }
+     @media (max-width: 1300px) {
+      top: -8%;
+     }
+     @media (max-width: 1120px) {
+      top: -15%;
+     }
+     @media (max-width: 980px) {
+     display: none;
+     }
+    .sirv-spin{
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      opacity: 0;
+    }
+    &.show{
+      opacity: 1;
+      z-index: 100;
+      .show3d{
+        opacity: 1;
+        z-index: 10; 
+      }
+    }
+  }
+
+}
+
+.loupes-title{
+  margin-top: 150px;
+  text-align: center;
+  margin-bottom: 30px;
+  @media (max-width: $screen-sm) {
+    margin-bottom: 50px;
+    margin-top: 8rem;
+  }
+  h1{
+    margin-bottom: 5px;
+    color: #EAEAEA;
+  }
+  p{
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #A2A2A2;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+  } 
+}

@@ -1,0 +1,153 @@
+@import '../../css/variables.scss';
+
+.feedback-container {
+  .swiper-slide {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .swiper-slide-active, .swiper-slide-prev, .swiper-slide-next {
+    opacity: 1;
+  }
+
+  .overall-rating {
+    color: #252525;
+
+    .sub-title {
+      margin-bottom: 1rem;
+    }
+
+    .rating-title {
+      font-family: $subtitle-font;
+      font-size: 2.8em;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      margin-bottom: 0.2em;
+    }
+
+    .rating-subtitle {
+      font-family: $subtitle-font;
+      font-size: 1.7em;
+      letter-spacing: 0.7px;
+      font-weight: 500;
+      color: $blue;
+    }
+
+    .overall-rating-value {
+      float: right;
+      text-align: center;
+
+      .rating-text {
+        font-family: $subtitle-font;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        font-weight: 900;
+        margin-bottom: 0.5rem;
+      }
+  
+      .rating-numbers {
+        font-family: $subtitle-font;
+        font-size: 4.9em;
+        letter-spacing: 0.13em;
+        font-weight: 500;
+        margin-bottom: 0;
+  
+        .rating-small {
+          font-size: 0.5em;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .overall-rating-call-action {
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+
+      .write-review-btn {
+        font-size: 0.9rem;
+        padding: 1.1rem 1.1rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      text-align: center;
+
+      .overall-rating-call-action {
+        .sub-title {
+          margin-top: 2rem;
+        }
+      }
+
+      .overall-rating-value {
+        float: none;
+      }
+    }
+  }
+
+	.feedback-box {
+    border: 1px solid lightgrey;
+		width: 100%;
+    background: white;
+    position: relative;
+		text-align: center;
+		margin: 70px 15px 0;
+    outline: none;
+    height: 22.5rem;
+
+    -webkit-box-shadow: inset 0px 8rem 0px 0px $blue;
+    -moz-box-shadow: inset 0px 8rem 0px 0px $blue;
+    box-shadow: inset 0px 8rem 0px 0px $blue;
+
+		.img {
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      width: 6rem;
+      height: 6rem;
+      z-index: 10;
+      display: block;
+      position: absolute;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 0 auto;
+      // top: 80px;
+      top: 5rem;
+      left: 0;
+      right: 0;
+		}
+
+		.star-ratings {
+      margin-top: 8rem;
+      margin-bottom: 0.1rem;
+    }
+    
+    .text-wrapper {
+      padding: 0 1rem;
+    }
+
+    .product-label, .message {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      font-family: $text-font;
+    }
+    
+    .product-label {
+      color: $blue;
+    }
+
+		.message {
+      color:#252525;
+      margin-bottom: 1.5rem;
+		}
+
+    .name-wrapper {
+      .name {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-top: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+    }
+	}
+}

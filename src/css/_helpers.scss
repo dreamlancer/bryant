@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+$background-primary: #010101;
+$text-primary: #fff;
+$link-color: #fff;
+$link-hover-color: #e1e1e1;
+
+
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	background: $background-primary;
+	color: $text-primary;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+a:hover {
+	color: $link-hover-color;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.avenir {
+	font-family: $subtitle-font;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.ReactModal__Overlay {
+  z-index: 100;
+}
+
+.font-black {
+	color: black !important;
+}

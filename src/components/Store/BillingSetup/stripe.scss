@@ -1,0 +1,35 @@
+.ReactModal__Overlay {
+  z-index: 10;
+  top: 60px !important;
+  color: black;
+  .ReactModal__Content {
+    top: 100px !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 500px !important;
+    margin: 0 auto;
+  }
+
+}
+
+.stripe-modal-content {
+  .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 15px;
+  }
+
+  .submit-button {
+    margin-top: 25px;
+    border: 1px solid #eeeeee;
+    background: white;
+    color: black;
+    padding: 7px 10px;
+  }
+  .error {
+    color: red;
+  }
+
+}

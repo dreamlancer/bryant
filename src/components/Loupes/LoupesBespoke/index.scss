@@ -1,0 +1,226 @@
+@import '../../../css/variables.scss';
+
+.loupes-bespoke {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  overflow: hidden;
+
+  transition: all 0.45s ease-in-out;
+  
+  .show {
+    opacity: 1;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+  .tailoring-title {
+    position: absolute;
+    top: 6rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2.2rem;
+    font-family: $title-font;
+    font-weight: 500;
+    @media (max-width: $screen-md) {
+      top: 6rem;
+      font-size: 2rem;
+    }
+  }
+  
+  .loupes-switch {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+
+    z-index: 20;
+    color: white;
+    text-transform: uppercase;
+    font-family: $btn-font;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+
+    &.close-x {
+      left: auto;
+      right: 4%;
+      top: 30px;
+      z-index: 100;
+      background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3Ljk3MSA0Ny45NzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ3Ljk3MSA0Ny45NzE7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjU2cHgiPgo8Zz4KCTxwYXRoIGQ9Ik0yOC4yMjgsMjMuOTg2TDQ3LjA5Miw1LjEyMmMxLjE3Mi0xLjE3MSwxLjE3Mi0zLjA3MSwwLTQuMjQyYy0xLjE3Mi0xLjE3Mi0zLjA3LTEuMTcyLTQuMjQyLDBMMjMuOTg2LDE5Ljc0NEw1LjEyMSwwLjg4ICAgYy0xLjE3Mi0xLjE3Mi0zLjA3LTEuMTcyLTQuMjQyLDBjLTEuMTcyLDEuMTcxLTEuMTcyLDMuMDcxLDAsNC4yNDJsMTguODY1LDE4Ljg2NEwwLjg3OSw0Mi44NWMtMS4xNzIsMS4xNzEtMS4xNzIsMy4wNzEsMCw0LjI0MiAgIEMxLjQ2NSw0Ny42NzcsMi4yMzMsNDcuOTcsMyw0Ny45N3MxLjUzNS0wLjI5MywyLjEyMS0wLjg3OWwxOC44NjUtMTguODY0TDQyLjg1LDQ3LjA5MWMwLjU4NiwwLjU4NiwxLjM1NCwwLjg3OSwyLjEyMSwwLjg3OSAgIHMxLjUzNS0wLjI5MywyLjEyMS0wLjg3OWMxLjE3Mi0xLjE3MSwxLjE3Mi0zLjA3MSwwLTQuMjQyTDI4LjIyOCwyMy45ODZ6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      background-size: 1.5rem 1.5rem;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media (max-width: $screen-md) {
+        right: 15px;
+        top: 15px !important;
+        background-size: 2rem 2rem;
+      }
+    }
+
+    &.arrow-back {
+      margin-top: 0.45rem;
+    }
+
+    .arrow-left {
+      position: absolute;
+      top: -25%;
+      width: 1rem;
+      height: 2rem;
+      z-index: 10;
+      cursor: pointer;
+      left: -1.5rem;
+      opacity: 0.6;
+    }
+  }
+  &.back {
+    .loupes-switch {
+      top: 6.9rem;
+      .arrow-left {
+        transform: scale(.8);
+      }
+    }
+  }
+  .control-wrapper {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .arrow-left {
+      border-left: 2px solid white;
+      height: 15px;
+      width: 15px;
+      border-bottom: 2px solid white;
+      transform: rotate(45deg);
+    }
+    .arrow-right {
+      border-right: 2px solid white;
+      height: 15px;
+      width: 15px;
+      border-bottom: 2px solid white;
+      transform: rotate(-45deg);
+    }
+    .swiper-button-next-bespoke, .swiper-button-prev-bespoke {
+      position: relative;
+      height: 100%;
+      width: 15px;
+      background: none;
+      left: 0;
+      right: 0;
+      margin: 0;
+    }
+
+    .swiper-pagination {
+      position: relative;
+      margin: 4px 7px 0;
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        margin: 5px;
+        background: white;
+      }
+      .swiper-pagination-bullet-active {
+        background: $blue;
+      }
+    }
+  }
+  .swiper-container-bespoke {
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    .swiper-slide {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .slide-explanation {
+        padding: 7% 5% 0;
+        .explanation-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          font-size: 1rem;
+
+          .explanation-step {
+            font-size: 2.1em;
+            font-family: $subtitle-font;
+            font-weight: 500;
+          }
+          .explanation-title {
+            font-size: 1.7em;
+            font-family: $subtitle-font;
+            font-weight: 500;
+          }
+
+          .explanation-description {
+            font-size: 1.2em;
+            line-height: 1.5;
+            font-weight: 500;
+            font-family: $text-font;
+          }
+        }
+        @media (max-width: $screen-sm) {
+          padding: 20% 10% 0;
+          .explanation-image-wrapper {
+            width: 80%;
+            margin: 0 auto;
+          }
+          .explanation-wrapper {
+            .explanation-step {
+              font-size: 2em;
+            }
+            .explanation-title {
+              font-size: 1.7em;
+            }
+
+            .explanation-description {
+              font-size: 1.3em;
+              line-height: 1em;
+            }
+          }
+        }
+        @media (max-width: 350px) {
+          padding: 20% 10% 0;
+          .explanation-image-wrapper {
+            width: 60%;
+            margin: 0 auto;
+          }
+          .explanation-wrapper {
+            .explanation-step {
+              font-size: 2em;
+            }
+            .explanation-title {
+              font-size: 1.7em;
+            }
+
+            .explanation-description {
+              font-size: 1em;
+              line-height: 1.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

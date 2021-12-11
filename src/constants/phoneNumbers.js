@@ -1,0 +1,2 @@
+export const OFFICE_NUMBER = '+44(0)1932320064';
+export const MOBILE_NUMBER = '+44(0)7990113723';

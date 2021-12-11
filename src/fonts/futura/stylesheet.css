@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Futura';
+    font-display: auto;
+    src: url('Futura-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    font-display: auto;
+    src: url('FUTURAB.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/*
+
+@font-face {
+    font-family: 'Futura-condensed';
+    src: url('Futura-CondensedMedium-03.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-condensed';
+    src: url('Futura-CondensedExtraBold-04.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+} */
